@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-[#F6F8FA] text-gray-800 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-gray-900;
+  }
+}
+
+@layer components {
+  /* Admin gradients */
+  .admin-gradient {
+    @apply bg-gradient-to-r from-[#6366f1] to-[#0B3D91];
+  }
+
+  /* Passenger/Driver gradients */
+  .brand-gradient {
+    @apply bg-gradient-to-r from-[#0B3D91] to-[#17A2A9];
+  }
+
+  .glass-nav {
+    @apply bg-white/95 backdrop-blur-xl border-t border-gray-100;
+  }
+}
